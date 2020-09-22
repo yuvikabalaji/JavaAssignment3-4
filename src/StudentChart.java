@@ -1,17 +1,20 @@
 public class StudentChart {
     String name;
-    public StudentChart(String s) {
+    int roll;
+    public StudentChart(String s, int i) {
         name = s;
+        roll = i;
     }
     public StudentChart() {
         name = "Unknown";
+        roll = 0;
     }
 }
 class Student{
     public static void main(String[] args){
-        StudentChart s =new StudentChart( "Dytto");
+        StudentChart s =new StudentChart("Dytto", 4);
         StudentChart a =new StudentChart();
-        System.out.println(s.name);
-        System.out.println(a.name);
+        System.out.println(s.name+" "+s.roll);
+        System.out.println(a.name+" "+a.roll);
     }
 }
